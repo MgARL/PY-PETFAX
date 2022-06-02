@@ -1,0 +1,12 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+img{
+    border-radius: 5px;
+}
+
+.img-height{
+    height: 600px;
+}
