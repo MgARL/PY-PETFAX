@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFax</title>
+    <link href="https://bootswatch.com/5/sketchy/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+    <div class="contaner">
+        <h2> Submit Fact!</h2>
+        <div class="d-flex justify-content-center">
+            <form class="mb-5 w-50">
+                <label for="name" class="form-label" >Name:</label><span style="color: red;"> *</span>
+                <input class="form-control" name="name" id="name" type="text" minlength="4" maxlength="50" required>
+                <label class="form-label"> Fun fact:</label><span style="color: red;"> *</span>
+                <input  class="form-control" type="text" name="fun-fact" id="fun-fact"  minlength="10" maxlength="255" required>
+                <input class="btn btn-primary mt-2" type="submit" value="Submit">
+            </form>
+        </div>
+        <a href="/pets"><button class="btn btn-primary mt-2">home</button></a>
+    </div>
+</body>
+
+</html>
