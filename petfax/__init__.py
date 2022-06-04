@@ -8,5 +8,7 @@ def create_app():
         return redirect("/pets")
     from . import pet
     app.register_blueprint(pet.bp)   
+    from . import fact
+    app.register_blueprint(fact.bp)
      
     return app

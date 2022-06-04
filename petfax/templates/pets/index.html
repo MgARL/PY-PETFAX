@@ -12,10 +12,10 @@
 
 <body>
     <h1>Welcome to PetFax</h1>
-    <div class="row row-cols-sm-2 row-cols-md-4 d-flex justify-content-center align-items-center">
+    <div class="row row-cols-sm-2 row-cols-lg-4 d-flex justify-content-center">
         {% for pet in pets %}
 
-        <div class="col">
+        <div class="col my-2">
             <div class="card" style="width: 18rem;">
                 <img src="{{ pet.pet_photo }}" class="card-img-top" alt="{{ pet.pet_name }}">
                 <div class="card-body">
@@ -27,7 +27,7 @@
         {% endfor %}
     </div>
     <div class="container my-3">
-        <p>We'd love to learn more fun facts</p><a href="/pets/facts">submit your here</a>
+        <p>We'd love to learn more fun facts</p><a href="/facts/new">submit your here</a>
     </div>
 </body>
 
